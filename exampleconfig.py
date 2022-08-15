@@ -12,4 +12,4 @@ class Development(Config):
     SUDO_COMMAND_HAND_LER = "."
     TZ = "Asia/Baghdad"
 
-# تليثون العرب - @IQTHON 
+# تليثون sad - @qlv88 
