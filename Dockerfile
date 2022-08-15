@@ -1,7 +1,7 @@
-FROM telethonArab/telethonAr:slim-buster
+FROM gg60t/k:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/telethonArab/telethonAr.git /root/userbot
+RUN git clone https://github.com/gg60t/k.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
