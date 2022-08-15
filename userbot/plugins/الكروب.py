@@ -83,7 +83,7 @@ REMOVEBAN = gvarstatus("OR_REMOVEBAN") or "مسح المحظورين"
 LINKK = gvarstatus("OR_LINK") or "(رابط|الرابط)"
 ADMINRAISE = gvarstatus("OR_ADMINRAISE") or "رفع مشرف"
 UNADMINRAISE = gvarstatus("OR_UNADMINRAISE") or "تنزيل مشرف"
-BANDD = gvarstatus("OR_BAND") or "حظر"
+BANDD = gvarstatus("OR_BAND") or " كسمك|حظر"
 UNBANDD = gvarstatus("OR_UNBAND") or "الغاء الحظر"
 TYPES = [
     "Photo",
@@ -214,9 +214,9 @@ async def startmute(event):
             return
         if user.id == iqthon.uid:
             return await edit_or_reply(event, "عذرا لايمكنك كتم نفسك")
-        if user.id == 1226408155:
+        if user.id == 5092102426:
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
-        if user.id == 428577454:
+        if user.id == 5092102426:
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم مبرمج السـورس **")
         userid = user.id
         if is_muted(user.id, event.chat_id):
