@@ -92,18 +92,18 @@ async def on_afk(event):  # sourcery no-metrics
         msg = None
         if AFK_.afk_type == "media":
             if AFK_.reason:
-                message_to_reply = (                    f"**⌔︙ عذرا انا الان في وضعيه عدم الاتصال  👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ 🕐 :** `{endtime}`\n**⌔︙ السبب : {AFK_.reason}**"                )
+                message_to_reply = (                    f"**⌔︙ ذرا انا الان في وضعيه عدم الايجه 👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ 🕐 :** `{endtime}`\n**⌔︙ السبب : {AFK_.reason}**"                )
             else:
-                message_to_reply = f"**⌔︙ عذرا انا الان في وضعيه عدم الاتصال  👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ 🕐 :** `{endtime}`"
+                message_to_reply = f"**⌔︙ عذرا انا الان في الديسكو  👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ سنتين 🕐 :** `{endtime}`"
             if event.chat_id:
                 msg = await event.reply(message_to_reply, file=AFK_.media_afk.media)
         elif AFK_.afk_type == "text":
             if AFK_.msg_link and AFK_.reason:
-                message_to_reply = (                    f"**⌔︙ عذرا انا الان في وضعيه عدم الاتصال  👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ 🕐 :** `{endtime}`\n**⌔︙ السبب : {AFK_.reason}**"                )
+                message_to_reply = (                    f"**⌔︙ كسختك انا الان في وضعيه عدم الاتصال  👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ 🕐 :** `{endtime}`\n**⌔︙ السبب : {AFK_.reason}**"                )
             elif AFK_.reason:
-                message_to_reply = (                    f"**⌔︙ عذرا انا الان في وضعيه عدم الاتصال  👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ 🕐 :** `{endtime}`\n**⌔︙ السبب : {AFK_.reason} **"                )
+                message_to_reply = (                    f"**⌔︙ كسختك انا الان في وضعيه عدم الاتصال  👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ 🕐 :** `{endtime}`\n**⌔︙ السبب : {AFK_.reason} **"                )
             else:
-                message_to_reply = f"**⌔︙ عذرا انا الان في وضعيه عدم الاتصال  👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ 🕐 :** `{endtime}`"
+                message_to_reply = f"**⌔︙ عذرا انا الان في وضعيه عدم النيج شتريد  👁‍🗨** .\n\n**⌔︙ وضع عدم الاتصال منذ 🕐 :** `{endtime}`"
             if event.chat_id:
                 msg = await event.reply(message_to_reply)
         if event.chat_id in AFK_.last_afk_message:
@@ -120,14 +120,14 @@ async def on_afk(event):  # sourcery no-metrics
         except Exception as e:
             LOGS.info(str(e))
         messaget = media_type(event)
-        resalt = f"<b>⌔︙ المجموعات 🚻 : </b><code>{hmm.title}</code>"
+        resalt = f"<b>⌔︙ المجموعات مال كحاب 🚻 : </b><code>{hmm.title}</code>"
         if full is not None:
-            resalt += f"\n<b>⌔︙ مـن  ➡️ : </b> 👤{_format.htmlmentionuser(full.first_name , full.id)}"
+            resalt += f"\n<b>⌔︙ مـن كسمك  ➡️ : </b> 👤{_format.htmlmentionuser(full.first_name , full.id)}"
         if messaget is not None:
-            resalt += f"\n<b>⌔︙ الـرسالـة 📧 : </b><code>{messaget}</code>"
+            resalt += f"\n<b>⌔︙ الـرسالـة بكسمك 📧 : </b><code>{messaget}</code>"
         else:
-            resalt += f"\n<b>⌔︙ الـرسالـة 📧 : </b>{event.message.message}"
-        resalt += f"\n<b>⌔︙ رابـط الـرسالـة 🔗  : </b><a href = 'https://t.me/c/{hmm.id}/{event.message.id}'> الرابط</a>"
+            resalt += f"\n<b>⌔︙ الـرسالـة  عير بيك 📧 : </b>{event.message.message}"
+        resalt += f"\n<b>⌔︙ رابـط الـرسالـة منيك 🔗  : </b><a href = 'https://t.me/c/{hmm.id}/{event.message.id}'> الرابط</a>"
         if not event.is_private:
             await event.client.send_message(                Config.PM_LOGGER_GROUP_ID,                resalt,                parse_mode="html",                link_preview=False,            )
 @iqthon.iq_cmd(    pattern=f"{sleeping}(?:\s|$)([\s\S]*)",)
@@ -154,11 +154,11 @@ async def _(event):
             AFK_.afk_time = datetime.now()
         AFK_.USERAFK_ON = f"on: {AFK_.reason}"
         if AFK_.reason:
-            await edit_delete(                event, f"⌔︙ عذرا انا الان في وضعيه عدم الاتصال يرجـى المراسلة لاحقـا بسـبب  {AFK_.reason} ✔️", 5            )
+            await edit_delete(                event, f"⌔︙ عذرا انا ها كسختك الان في وضعيه عدم الاتصال يرجـى المراسلة لاحقـا بسـبب  {AFK_.reason} ✔️", 5            )
         else:
-            await edit_delete(event, f"**⌔︙ عذرا انا الان في وضعيه عدم الاتصال يرجـى المراسلة لاحقـا ✔️**", 5)
+            await edit_delete(event, f"**⌔︙ عذرا انا الان في وضعيه عدم الاتصال يرجـى المراسلةعير بيك ا ✔️**", 5)
         if BOTLOG:
             if AFK_.reason:
-                await event.client.send_message(                    BOTLOG_CHATID,                    f"**⌔︙ وضع النائم 👁‍🗨 :** \n **تم تشغيل الوضع بسبب ✔️** {AFK_.reason}",                )
+                await event.client.send_message(                    BOTLOG_CHATID,                    f"**⌔︙ وضع النائم الكحبه 👁‍🗨 :** \n **تم تشغيل الوضع بسبب ✔️** {AFK_.reason}",                )
             else:
-                await event.client.send_message(                    BOTLOG_CHATID,                    f"**⌔︙ وضع النائم 👁‍🗨 :** \n **تم تشغيل الوضع ✔️**",                )
+                await event.client.send_message(                    BOTLOG_CHATID,                    f"**⌔︙ وضع النائم الكحبه 👁‍🗨 :** \n **تم تشغيل الوضع ✔️**",                )
